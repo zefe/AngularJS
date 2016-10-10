@@ -14,6 +14,11 @@
 	<script type="text/javascript" src="js/services.js"></script>
 </head>
 <body ng-controller="carListCtrl">
-
+	<ul>
+		<li ng-repeat="car in cars">
+			<span>{{car.name}}</span>
+			<p>{{car.snippet}}</p>
+		</li>
+	</ul>
 </body>
 </html>
